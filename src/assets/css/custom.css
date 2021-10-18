@@ -1,0 +1,230 @@
+.navbg{
+    /* height: 100px; */
+    padding: 0 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 10%);
+    position: fixed !important;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+.navbar-brand {
+   
+    margin-left: 1.4em;
+}
+body{
+    overflow-x: hidden;
+}
+
+.navbg .navLink {
+    color: #4f4f4f !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.endLogo{
+    width: auto;
+    height: 80px;
+}
+
+.fooimg {
+    width: auto;
+    height: 35px;
+}
+.footer {
+    background: #e7e8ea;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid rgba(0,0,0,.125);
+    font-size: 12px;
+    height: 40px;
+}
+.mainContentLogin {
+    min-height: calc(100vh - 36px);
+    background: url(../images/loginpagebg.jpg) no-repeat;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto;
+    background-size: cover;
+    background-position: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.maincontent{
+    text-align: left;
+}
+.loginCard {
+        border: 5px solid #e7e8ea;
+            border-bottom-color: rgb(231, 232, 234);
+            border-bottom-style: solid;
+            border-bottom-width: 5px;
+        border-radius: 4px;
+        background: #fff;
+        color: #000;
+        text-align: left;
+}
+
+.loginCard .card-header {
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    border-bottom: 1px solid #e7e8ea;
+    
+}
+.loginCard .card-header span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4f4f4f;
+    margin-left: 42px;
+    line-height: 40px;
+}
+.loginCard .card-header span::after {
+    content: "";
+    height: 4px;
+    width: 20px;
+    display: block;
+    background: #44546a;
+}
+.loginCard .card-body {
+    padding: 15px;
+    
+}
+.loginCard .label {
+    margin-left: 44px;
+}
+/* .formin{
+    width: 75px;
+} */
+.formgroup{
+    display: flex;
+}
+
+.downloadbtn{
+    background: #fff!important;
+    color: #238cbb!important;
+    border-color: #fff!important;
+}
+.downloadbtn:hover{
+    background: #238cbb!important;
+    color:#fff!important ;
+    border-color: #238cbb!important;
+}
+.loginCard .input-group-addon {
+    color: #44546a;
+    background: transparent;
+    font-size: 24px;
+    border: 0;
+    padding: 0 10px;
+}
+.loginCard .loginBtn,.loginCard .loginBtn:hover {
+    background: #44546a;
+    color: #fff;
+    border-color: #44546a;
+    margin-left: 44px;
+}
+
+.loginCard .forgotbtn,.loginCard .forgotbtn:hover{
+    float: right;
+    background-color: #fff;
+    color: #000;
+    border: 0;
+}
+
+.descmessage {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    /* padding: 0 15px; */
+    text-align: left;
+}
+
+.registercontent{
+   
+    text-align: left;
+    color: black;
+    background-color: #fff;
+  
+    width: 80%;
+ 
+  
+  margin-top: 5rem;
+}
+.card-title {
+    margin-bottom: .75rem;
+}
+.content{
+    padding: 0 15px;
+}
+.activatecontent{
+    margin: 0 auto;
+    text-align: left;
+    color: black;
+    background-color: #fff;
+  
+    width: 40%;
+
+}
+.info {
+    
+    display: flex;
+   
+    flex-direction: row;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+.info .description .info-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+.info .description > .description {
+    font-size: 14px;
+}
+.info .icon i {
+    font-size: 32px;
+    padding-right: 10px;
+    color: #44546a;
+}
+.registercontent .regbtn, .regbtn:hover {
+    background: #44546a;
+    color: #fff;
+}
+.activate{
+    text-align: center;
+}
+.activatecontent,.registercontent{
+    padding: 1.25rem;
+    border-radius: .25rem;
+}
+.activatecontent{
+    padding: 1.75rem;
+    border-radius: .25rem;
+}
+.activatecontent .activatebtn,.activatecontent .activatebtn:hover{
+    background: #44546a;
+    color: #fff;
+}
+.activatemain{
+    width: 100%;
+    
+}
+.formInput{
+    display: block;
+    width: 87%;
+} 
+.footext{
+    text-align: left;
+    padding-left: 2.6rem;
+}
+.footextcopy{
+    text-align: right;
+    padding-right: 3.1rem;
+}
