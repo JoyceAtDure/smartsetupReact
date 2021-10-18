@@ -1,6 +1,6 @@
 //import { Button, Tab } from 'bootstrap';
 import React from 'react';
-import { Card, Nav, Navbar , Button, Form, Table } from 'react-bootstrap';
+import { Card, Nav, Navbar , Button, Form, Table, Tabs, Tab } from 'react-bootstrap';
 
 import imgurl from '../assets/images/imgUrl';
 import jQuery from 'jquery';
@@ -120,14 +120,14 @@ const Dashboard = () => {
                         <li className="nav-item step " role="presentation">
                             <a className="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="a" role="tab" aria-controls="pills-home" aria-selected="true">Program</a>
                         </li>
-                        <li className="nav-item step current" role="presentation">
-                            <a className="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="a" role="tab" aria-controls="pills-profile" aria-selected="false">Registration</a>
+                        <li className="nav-item step " role="presentation">
+                            <a className="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="a" role="tab" aria-controls="pills-profile" aria-selected="false">Registration</a>
                         </li>
                         <li className="nav-item step" role="presentation">
                             <a className="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Forms</a>
                         </li>
-                        <li className="nav-item step" role="presentation">
-                            <a className="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Alerts</a>
+                        <li className="nav-item step current" role="presentation">
+                            <a className="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Alerts</a>
                         </li>
                         <li className="nav-item step" role="presentation">
                             <a className="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Workflow</a>
@@ -215,7 +215,7 @@ const Dashboard = () => {
                            
 
                         </div>
-                        <div className="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div className="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                             <div>
                             <div className="row pt-1">
                                 <div className="col-12 bnBtn">
@@ -288,7 +288,83 @@ const Dashboard = () => {
                                 </Card.Body>
                             </Card>
                             </div>
-                                <div className="col-4">hidden</div>
+                                <div className="col-4">
+                                <Card>
+                                <Card.Header>Data Variables</Card.Header>
+                                    <Card.Body>
+                                    <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+                                        <Tab eventKey="home" title="English">
+                                        <Form>
+                                        <Form.Group controlId="formBasicEmail">
+                                            <Form.Label>*Name</Form.Label>
+                                            <Form.Control type="text" placeholder="" />
+                                           
+                                        </Form.Group>
+
+                                        <Form.Group controlId="formBasicPassword">
+                                            <Form.Label>*Type</Form.Label>
+                                            <Form.Control as="select">
+                                                <option>Select Type</option>
+                                                <option>Text</option>
+                                                <option>Option List</option>
+                                                <option>Number</option>
+                                                <option>Date</option>
+                                                <option>Checkbox Options</option>
+                                            </Form.Control>
+                                        </Form.Group>
+                                        
+                                        </Form>
+                                        <Form>
+                                       
+                                        {['radio'].map((type) => (
+                                            <div key={`inline-${type}`} className="mb-3">
+                                                <Form.Label className="mr-4">*Mandatory</Form.Label>
+                                            <Form.Check inline label="Yes" name="group1" type={type} id={`inline-${type}-1`} />
+                                            <Form.Check inline label="No" name="group1" type={type} id={`inline-${type}-2`} />
+                                            
+                                            </div>
+                                        ))}
+                                        </Form>
+                                        <Form>
+                                        <Form.Group controlId="exampleForm.ControlSelect1">
+                                            <Form.Label>Parent question</Form.Label>
+                                            <Form.Control as="select">
+                                            <option>-</option>
+                                            <option>Client Type </option>
+                                            <option>Please specify</option>
+                                            <option>Gender </option>
+                                            <option>Are You Currently On TB Treatment? </option>
+                                            <option>Site of Disease </option>
+                                            <option>HIV Status </option>
+                                            <option>Are you on ART?  </option>
+                                            
+                                            </Form.Control>
+                                        </Form.Group>
+                                        </Form>
+                                        <div>
+                                        <Button className="addbtn" variant="primary">Add</Button>
+                                        </div>
+                                        
+                                        </Tab>
+                                        <Tab eventKey="profile" title="Arabic">
+                                            abc12
+                                        </Tab>
+                                        <Tab eventKey="contact" title="Chinese">
+                                            abc13
+                                        </Tab>
+                                        <Tab eventKey="contact1" title="Spanish">
+                                            abc13vv
+                                        </Tab>
+                                        <Tab eventKey="contact2" title="French">
+                                            abc13ff
+                                        </Tab>
+                                        <Tab eventKey="contact3" title="Russian">
+                                            abc1333
+                                        </Tab>
+                                    </Tabs>
+                                    </Card.Body>
+                                </Card>
+                                </div>
                                 </div>
                                 <div class="wizard-card-footer clearfix">
                                                 <div class="wizard-footer-left"><span role="button" tabindex="0"><button tabindex="-1" type="button" class="wizard-btnb" >
@@ -303,7 +379,30 @@ const Dashboard = () => {
 
 
                         </div>
-                        <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">..3.</div>
+                        <div className="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">..3.</div>
+                        <div className="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div>
+                            <div className="row pt-1">
+                                <div className="col-12 bnBtn">
+                                    <button tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
+                                    <button tabindex="-1" type="button" className="wizard-btnn  mr-3">Next
+                                    </button>
+                                    </div>
+                            </div>
+                            <div className="row">
+                            
+                            <div className="col-6">
+                            <div className="row">
+                               <div className="col-8">Alert Name</div>
+                                <div className="col-3">Threshold in days</div>
+                            </div>
+                            </div>
+                                
+                                <div className="col-4">Select data variables (to be shown in the Client cards in Alerts Section of the App)
+                                 </div>
+                            </div>
+                            </div>
+                        </div>
                         </div>
                            
                         </Card.Body>
