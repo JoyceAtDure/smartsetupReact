@@ -396,6 +396,54 @@ const Dashboard = () => {
                                <div className="col-8">Alert Name</div>
                                 <div className="col-3">Threshold in days</div>
                             </div>
+                            <div className="row">
+                               <div className="col-8 mt-3">
+                               <input type="text" className="form-control" placeholder="TB Infection Testing Referral Alert"/>
+                               </div>
+                                <div className="col-3 mt-3">
+                                <div   class="int-pm"><button  class="int-pm-btn int-pm-decrement disabled">-</button><div  role="spinbutton" tabindex="0" aria-valuenow="0" aria-valuemin="0" class="int-pm-value">0</div><button  class="int-pm-btn int-pm-increment">+</button></div>
+                                </div>
+                            </div>
+                            <div className="row">
+                               <div className="col-8 mt-3">
+                               <input type="text" class="form-control" placeholder="TB Testing Referral Alert"/>
+                               </div>
+                             <div className="col-3 mt-3">
+                                <div   class="int-pm"><button  class="int-pm-btn int-pm-decrement disabled">-</button><div  role="spinbutton" tabindex="0" aria-valuenow="0" aria-valuemin="0" class="int-pm-value">0</div><button  class="int-pm-btn int-pm-increment">+</button></div>
+                                </div>
+                            </div>
+                            <div className="row">
+                               <div className="col-8 mt-3">
+                               <input type="text" class="form-control" placeholder="TBI Treatment Referral Alert"/>
+                               </div>
+                             <div className="col-3 mt-3">
+                                <div   class="int-pm"><button  class="int-pm-btn int-pm-decrement disabled">-</button><div  role="spinbutton" tabindex="0" aria-valuenow="0" aria-valuemin="0" class="int-pm-value">0</div><button  class="int-pm-btn int-pm-increment">+</button></div>
+                                </div>
+                            </div>
+                            <div className="row">
+                               <div className="col-8 mt-3">
+                               <input type="text" class="form-control" placeholder="TB Treatment Referral Alert"/>
+                               </div>
+                             <div className="col-3 mt-3">
+                                <div   class="int-pm"><button  class="int-pm-btn int-pm-decrement disabled">-</button><div  role="spinbutton" tabindex="0" aria-valuenow="0" aria-valuemin="0" class="int-pm-value">0</div><button  class="int-pm-btn int-pm-increment">+</button></div>
+                                </div>
+                            </div>
+                            <div className="row">
+                               <div className="col-8 mt-3">
+                               <input type="text" class="form-control" placeholder="TBI Re-testing Alert"/>
+                               </div>
+                             <div className="col-3 mt-3">
+                                <div   class="int-pm"><button  class="int-pm-btn int-pm-decrement disabled">-</button><div  role="spinbutton" tabindex="0" aria-valuenow="0" aria-valuemin="0" class="int-pm-value">0</div><button  class="int-pm-btn int-pm-increment">+</button></div>
+                                </div>
+                            </div>
+                            <div className="row">
+                               <div className="col-8 mt-3">
+                               <input type="text" class="form-control" placeholder="TB Re-testing Alert"/>
+                               </div>
+                             <div className="col-3 mt-3">
+                                <div   class="int-pm"><button  class="int-pm-btn int-pm-decrement disabled">-</button><div  role="spinbutton" tabindex="0" aria-valuenow="0" aria-valuemin="0" class="int-pm-value">0</div><button  class="int-pm-btn int-pm-increment">+</button></div>
+                                </div>
+                            </div>
                             </div>
                                 
                                 <div className="col-4">Select data variables (to be shown in the Client cards in Alerts Section of the App)

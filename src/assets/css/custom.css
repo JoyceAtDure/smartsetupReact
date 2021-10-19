@@ -435,3 +435,71 @@ body{
     border-color: rgb(68, 84, 106); 
     color: white;
 }
+
+.int-pm {
+   
+    display: flex;
+    text-align: center;
+}
+
+.int-pm .int-pm-btn.disabled {
+    background-color: #eee;
+    color: #777;
+    cursor: not-allowed;
+}
+.int-pm .int-pm-btn {
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.int-pm .int-pm-btn {
+    width: 30%;
+    font-size: 20px;
+    font-weight: 700;
+}
+.int-pm .int-pm-decrement {
+    border-radius: 30px 0 0 30px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .5;
+    background: #ccc;
+}
+
+.int-pm .int-pm-value {
+    border-width: 1px 0;
+    border-color: #ccc;
+    border-style: solid;
+    padding: 0 10px;
+}
+.int-pm .int-pm-value {
+    width: 30%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.int-pm .int-pm-value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.int-pm .int-pm-btn {
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.int-pm .int-pm-btn {
+    width: 30%;
+    font-size: 20px;
+    font-weight: 700;
+}
+.int-pm .int-pm-increment {
+    border-radius: 0 30px 30px 0;
+}
