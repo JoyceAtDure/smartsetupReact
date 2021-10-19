@@ -627,3 +627,16 @@ body{
     font-size: 14px;
     font-weight: 500;
 }
+
+.work-flow-top-bar {
+   
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addbtn{
+    background-color: rgb(68, 84, 106);
+     border-color: rgb(68, 84, 106);
+      color: white;
+      float: left;
+}

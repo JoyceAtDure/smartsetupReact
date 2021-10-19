@@ -1,6 +1,6 @@
 //import { Button, Tab } from 'bootstrap';
 import React from 'react';
-import { Card, Nav, Navbar , Button, Form, Table, Tabs, Tab } from 'react-bootstrap';
+import { Card, Nav, Navbar , Button, Form, Table, Tabs, Tab, Accordion } from 'react-bootstrap';
 
 import imgurl from '../assets/images/imgUrl';
 import jQuery from 'jquery';
@@ -123,14 +123,14 @@ const Dashboard = () => {
                         <li className="nav-item step " role="presentation">
                             <a className="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="a" role="tab" aria-controls="pills-profile" aria-selected="false">Registration</a>
                         </li>
-                        <li className="nav-item step" role="presentation">
-                            <a className="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Forms</a>
+                        <li className="nav-item step current" role="presentation">
+                            <a className="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Forms</a>
                         </li>
                         <li className="nav-item step " role="presentation">
                             <a className="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Alerts</a>
                         </li>
-                        <li className="nav-item step current" role="presentation">
-                            <a className="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Workflow</a>
+                        <li className="nav-item step " role="presentation">
+                            <a className="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Workflow</a>
                         </li>
                         </ul>
                         <div className="tab-content" id="pills-tabContent">
@@ -379,7 +379,95 @@ const Dashboard = () => {
 
 
                         </div>
-                        <div className="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">..3.</div>
+                        <div className="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div>
+                            <div className="row pt-1">
+                                <div className="col-12 bnBtn">
+                                    <button tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
+                                    <button tabindex="-1" type="button" className="wizard-btnn  mr-3">Next
+                                    </button>
+                                </div>
+                                
+                            </div>
+                            <div className="row mb-2">
+                            <div className="col-12">
+                               <button  type="button" data-toggle="tooltip" title="Edit Form Name" className="addbtn mt-2"> Add Form </button>
+
+                            </div>
+                            </div>
+                           
+                            <div className="row mb-2">
+                                <div className="col-8">
+                                <Accordion defaultActiveKey="0">
+                                <Card>
+                                    <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                        RISK ASSESSMENT AND REFERRAL 
+                                    </Accordion.Toggle>
+                                    </Card.Header>
+                                    <Accordion.Collapse eventKey="0">
+                                    <Card.Body>Hello! I'm the body</Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card>
+                                    <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                                    TB TESTING FORM 
+                                    </Accordion.Toggle>
+                                    </Card.Header>
+                                    <Accordion.Collapse eventKey="1">
+                                    <Card.Body>Hello! I'm another body</Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card>
+                                    <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="2">
+                                       TB INFECTION TESTING FORM 
+                                    </Accordion.Toggle>
+                                    </Card.Header>
+                                    <Accordion.Collapse eventKey="2">
+                                    <Card.Body>Hello! I'm another body</Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card>
+                                    <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="3">
+                                    TB TREATMENT INITIATION FORM 
+                                    </Accordion.Toggle>
+                                    </Card.Header>
+                                    <Accordion.Collapse eventKey="3">
+                                    <Card.Body>Hello! I'm another body</Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card>
+                                    <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="4">
+                                    TB INITIATION FORM 
+                                    </Accordion.Toggle>
+                                    </Card.Header>
+                                    <Accordion.Collapse eventKey="4">
+                                    <Card.Body>Hello! I'm another body</Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card>
+                                    <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="4">
+                                    TBT Outcome
+                                    </Accordion.Toggle>
+                                    </Card.Header>
+                                    <Accordion.Collapse eventKey="4">
+                                    <Card.Body>Hello! I'm another body</Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                               </Accordion>
+                                </div>
+                                <div className="col-4"> 
+                                            hidden
+                                </div>
+                            
+                            </div>
+                            </div>
+                        </div>
                         <div className="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                             <div>
                             <div className="row pt-1">
@@ -452,27 +540,44 @@ const Dashboard = () => {
                             </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div className="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                             <div className="row">
-                            <div  class="col-12 bnBtn">
-                                <button  tabindex="-1" type="button" class="wizard-btnb  ml-3" >Back</button>
-                            <button  tabindex="-1" type="button" class="wizard-btnn  mr-4" >Publish</button></div>
+                            <div  className="col-12 bnBtn">
+                                <button  tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
+                            <button  tabindex="-1" type="button" className="wizard-btnn  mr-4" >Publish</button></div>
                             </div>
-                            <div  class="row"><div  class=" mt-2 offset-sm-6 col-sm-6 work-flow-top-bar"><button  type="button" class="btn btn-secondary"><a  href="https://uatltbi.duredemos.com/Manual/PreventTB_TrainingManual_SmartSetup_V5.docx.pdf" target="_blank"> Download Manual</a></button></div></div>
-                            <div class="row"><div class="col-md-12"><div class="form-group form-inline pull-left "><div ><label  class="">Filter:</label><input type="text" placeholder="Search query"  autocomplete="off" /></div></div><div class="form-group form-inline pull-right VueTables__limit"></div></div></div>
+                            <div  className="row"><div  className=" mt-2 offset-sm-6 col-sm-6 work-flow-top-bar"><button  type="button" className="btn btn-secondary"><a  href="https://uatltbi.duredemos.com/Manual/PreventTB_TrainingManual_SmartSetup_V5.docx.pdf" target="_blank"> Download Manual</a></button></div></div>
+                            <div className="row"><div className="col-md-12"><div className="form-group form-inline pull-left "><div ><label  className="">Filter:</label><input type="text" placeholder="Search query"  autocomplete="off" /></div></div><div className="form-group form-inline pull-right VueTables__limit"></div></div></div>
 
                             <div className="work-flow-table">
                                 <table  className="table">
                                     <thead>
-                                        <tr><th  tabindex="0"  ><span title="" >Stage Name</span><span ></span><div class="resize-handle" ></div></th><th  tabindex="0" ><span title="" >ORW</span><span ></span></th><th  tabindex="0" ><span title="" >FACILITY</span><span ></span></th></tr>
+                                        <tr><th  tabindex="0"  ><span title="" >Stage Name</span><span ></span><div className="resize-handle" ></div></th><th  tabindex="0" ><span title="" >ORW</span><span ></span></th><th  tabindex="0" ><span title="" >FACILITY</span><span ></span></th></tr>
                                     </thead>
                                     <tbody>
-                                    <tr class="VueTables__row "><td tabindex="0" class="">Registration</td><td tabindex="0" class=""><div data-v-538e1d14=""><div data-v-538e1d14=""><div data-v-538e1d14="" class="checkbox"><label data-v-538e1d14=""><input data-v-538e1d14="" type="checkbox" checked="checked" class="big-checkbox"/></label></div></div></div></td><td tabindex="0" class=""><div data-v-538e1d14=""><div data-v-538e1d14=""><div data-v-538e1d14="" class="checkbox"><label data-v-538e1d14=""><input data-v-538e1d14="" type="checkbox" checked="checked" class="big-checkbox"/></label></div></div></div></td> </tr>
+                                    <tr className="VueTables__row "><td tabindex="0" className="">Registration</td><td tabindex="0" className=""><div data-v-538e1d14=""><div data-v-538e1d14=""><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td> </tr>
+
+                                    <tr className="VueTables__row "><td tabindex="0" className="">RISK ASSESSMENT AND REFERRAL</td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td> </tr>
+
+                                    <tr className="VueTables__row "><td tabindex="0" className="">TB TESTING FORM</td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" className="big-checkbox"/></label></div></div></div></td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td> </tr>
+
+                                    <tr className="VueTables__row "><td tabindex="0" className="">TB INFECTION TESTING FORM</td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" className="big-checkbox"/></label></div></div></div></td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td> </tr>
+
+                                    <tr className="VueTables__row "><td tabindex="0" className="">TB TREATMENT INITIATION FORM</td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td> </tr>
+
+                                    <tr className="VueTables__row "><td tabindex="0" className="">TPT INITIATION FORM</td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td> </tr>
+
+                                    <tr className="VueTables__row "><td tabindex="0" className="">TPT Outcome</td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td><td tabindex="0" className=""><div ><div ><div  className="checkbox"><label ><input  type="checkbox" checked="checked" className="big-checkbox"/></label></div></div></div></td> </tr>
                                     </tbody>
                                 </table>
 
                             </div>
-
+                            <div  class=" mt-2 col-sm-12 work-flow-top-bar"> *Note : The workflow section is to assign roles to users, the sequence of the variables can be changed in the Forms section </div>
+                            <div className="row">
+                            <div  className="col-12 bnBtn">
+                                <button  tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
+                            <button  tabindex="-1" type="button" className="wizard-btnn  mr-4" >Publish</button></div>
+                            </div>
                             
 
                         </div>
