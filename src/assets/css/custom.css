@@ -640,3 +640,6 @@ body{
       color: white;
       float: left;
 }
+
+/* .multiselect__input
+width: 0px; position: absolute; padding: 0px; */
