@@ -246,8 +246,21 @@ body{
 .programHeader{
     background-color: #fff !important;
 }
-
-
+.btn-info{
+    background-color: #44546a !important;
+    border-radius: 10px !important;
+}
+.btn-sign{
+    background-color: #44546a !important;
+    color: #fff;
+    margin-left: 1rem;
+    border-radius: 10px !important;
+}
+.btn-sign i{
+    
+    color: #fff;
+    
+}
 /* jQuery Demo */
 
 .clearfix:after {
@@ -336,7 +349,7 @@ body{
   
   .arrow-steps .step.current {
     color: #fff;
-    background-color: #5599e5;
+    background-color: #44546a;
   }
   
   .arrow-steps .step.current a {
@@ -345,7 +358,7 @@ body{
   }
   
   .arrow-steps .step.current:after {
-    border-left: 17px solid #5599e5;
+    border-left: 17px solid #44546a;
   }
   
   .arrow-steps .step.done {
@@ -370,8 +383,22 @@ body{
 .textbtns{
     text-align: right;
 }
+.testbtn,.nextbtn{
+  background-color: #44546a !important;
+}
+.programTitle{
+    background-color: #44546a;
+    color: #fff;
+    text-align: left;
+    padding: 7px 10px 1px 10px;
+    font-size: 14px;
+    margin-top: 0.85rem;
+}
 
-
+.proform{
+    text-align: left;
+    margin-top: 0.85rem;
+}
 #sidebar.active {
     text-align: center;
     left: 0;

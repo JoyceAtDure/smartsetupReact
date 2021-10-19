@@ -91,7 +91,7 @@ const Dashboard = () => {
             </nav>
         <div className="contentapp">
           <Navbar expand="lg">
-          <button data-v-c3854e32="" type="button" id="sidebarCollapse" className="btn btn-info"><i data-v-c3854e32="" className="fas fa-bars"></i></button>
+          <button type="button" id="sidebarCollapse" className="btn btn-info"><i data-v-c3854e32="" className="fas fa-bars"></i></button>
             <Navbar.Brand href="#home">Prevent TB</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -100,7 +100,7 @@ const Dashboard = () => {
                         <span>Joy Joyce</span><br></br>
                         <span>joyce@mailinator.com</span>
                         </div>
-                    <i  className="fas fa-sign-out-alt fa-2x pull-right"></i>
+                  <button className="btn btn-sign"><i  className="fas fa-sign-out-alt fa-2x pull-right"></i></button>  
                 
                 </Nav>
                
@@ -117,14 +117,14 @@ const Dashboard = () => {
                         
 
                     <ul className="nav nav-pills mb-3 arrow-steps clearfix" id="pills-tab" role="tablist">
-                        <li className="nav-item step " role="presentation">
-                            <a className="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="a" role="tab" aria-controls="pills-home" aria-selected="true">Program</a>
+                        <li className="nav-item step current" role="presentation">
+                            <a className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="a" role="tab" aria-controls="pills-home" aria-selected="true">Program</a>
                         </li>
                         <li className="nav-item step " role="presentation">
                             <a className="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="a" role="tab" aria-controls="pills-profile" aria-selected="false">Registration</a>
                         </li>
-                        <li className="nav-item step current" role="presentation">
-                            <a className="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Forms</a>
+                        <li className="nav-item step " role="presentation">
+                            <a className="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Forms</a>
                         </li>
                         <li className="nav-item step " role="presentation">
                             <a className="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Alerts</a>
@@ -134,14 +134,14 @@ const Dashboard = () => {
                         </li>
                         </ul>
                         <div className="tab-content" id="pills-tabContent">
-                        <div className="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <div className="textbtns">
-                                <span><Button className="testbtn" variant="primary">Test TBI Generic</Button></span>
-                                <span><Button className="nextbtn ml-2" variant="primary">Next</Button></span> 
+                                <span><Button className="testbtn" >Test TBI Generic</Button></span>
+                                <span><Button className="nextbtn ml-2" >Next</Button></span> 
                             </div>
-                            <div><h6>Program Details</h6></div>
+                            <div className="programTitle"><h6>Program Details</h6></div>
                             
-                            <Form>
+                            <Form className="proform">
                             <div className="row">
                                 <div className="col-6">
                                     <Form.Group controlId="formBasicEmail">
@@ -207,8 +207,8 @@ const Dashboard = () => {
                                 </div>
                               </Form>
                               <div className="textbtns">
-                                <span><Button className="testbtn" variant="primary">Test TBI Generic</Button></span>
-                                <span><Button className="nextbtn ml-2" variant="primary">Next</Button></span> 
+                                <span><Button className="testbtn" >Test TBI Generic</Button></span>
+                                <span><Button className="nextbtn ml-2" >Next</Button></span> 
                             </div>
                            
                             
@@ -379,7 +379,7 @@ const Dashboard = () => {
 
 
                         </div>
-                        <div className="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div className="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                             <div>
                             <div className="row pt-1">
                                 <div className="col-12 bnBtn">
@@ -459,21 +459,21 @@ const Dashboard = () => {
                                             <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  class="text-right">Actions</th><th  class="text-right">Sequence</th></tr></thead>
 
                                             <tbody>
-                                                <tr  class=""><td >Date of Testing</td><td  class="texttablestyle">DATE</td><td  class="texttablestyle">Yes</td><td  class="texttablestyle"></td><td  class="p-1"></td><td  class="td-actions text-right"><button  type="button" title="Edit Question" class="btn btn-info btn_Edit"><i  class="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" class="btn btn-danger btn_Delete"><i  class="far fa-trash-alt"></i></button></td><td  class="text-right sequence-column"><span  title="Move Up"><i  class="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  class="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Date of Testing</td><td  className="texttablestyle">DATE</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                                <tr  class=""><td >Method of Testing</td><td  class="texttablestyle">CHECKBOX</td><td  class="texttablestyle">Yes</td><td  class="texttablestyle"></td><td  class="p-1"></td><td  class="td-actions text-right"><button  type="button" title="Add Question" class="btn btn-info btn_Edit"><i  class="fas fa-plus"></i></button><button  type="button" title="Edit Question" class="btn btn-info btn_Edit"><i  class="fas fa-pencil-alt"></i></button></td><td  class="text-right sequence-column"><span  title="Move Up"><i  class="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  class="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Method of Testing</td><td  className="texttablestyle">CHECKBOX</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                                <tr  class=""><td >Test Outcome</td><td  class="texttablestyle">OPTIONSET</td><td  class="texttablestyle">Yes</td><td  class="texttablestyle"></td><td  class="p-1"></td><td  class="td-actions text-right"><button  type="button" title="Add Question" class="btn btn-info btn_Edit"><i  class="fas fa-plus"></i></button><button  type="button" title="Edit Question" class="btn btn-info btn_Edit"><i  class="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" class="btn btn-danger btn_Delete"><i  class="far fa-trash-alt"></i></button></td><td  class="text-right sequence-column"><span  title="Move Up"><i  class="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  class="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Test Outcome</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                                <tr  class=""><td >Type of mWRD</td><td  class="texttablestyle">OPTIONSET</td><td  class="texttablestyle">No</td><td  class="texttablestyle"></td><td  class="p-1"></td><td  class="td-actions text-right"><button  type="button" title="Add Question" class="btn btn-info btn_Edit"><i  class="fas fa-plus"></i></button><button  type="button" title="Edit Question" class="btn btn-info btn_Edit"><i  class="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" class="btn btn-danger btn_Delete"><i  class="far fa-trash-alt"></i></button></td><td  class="text-right sequence-column"><span  title="Move Up"><i  class="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  class="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Type of mWRD</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                                <tr  class=""><td >mWRD Test Outcome</td><td  class="texttablestyle">OPTIONSET</td><td  class="texttablestyle">Yes</td><td  class="texttablestyle"></td><td  class="p-1"></td><td  class="td-actions text-right"><button  type="button" title="Add Question" class="btn btn-info btn_Edit"><i  class="fas fa-plus"></i></button><button  type="button" title="Edit Question" class="btn btn-info btn_Edit"><i  class="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" class="btn btn-danger btn_Delete"><i  class="far fa-trash-alt"></i></button></td><td  class="text-right sequence-column"><span  title="Move Up"><i  class="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  class="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >mWRD Test Outcome</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                                <tr  class=""><td >LF-LAM Test Outcome</td><td  class="texttablestyle">OPTIONSET</td><td  class="texttablestyle">No</td><td  class="texttablestyle"></td><td  class="p-1"></td><td  class="td-actions text-right"><button  type="button" title="Add Question" class="btn btn-info btn_Edit"><i  class="fas fa-plus"></i></button><button  type="button" title="Edit Question" class="btn btn-info btn_Edit"><i  class="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" class="btn btn-danger btn_Delete"><i  class="far fa-trash-alt"></i></button></td><td  class="text-right sequence-column"><span  title="Move Up"><i  class="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  class="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >LF-LAM Test Outcome</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                                <tr  class=""><td >Test Result</td><td  class="texttablestyle">OPTIONSET</td><td  class="texttablestyle">Yes</td><td  class="texttablestyle"></td><td  class="p-1"></td><td  class="td-actions text-right"><button  type="button" title="Add Question" class="btn btn-info btn_Edit"><i  class="fas fa-plus"></i></button><button  type="button" title="Edit Question" class="btn btn-info btn_Edit"><i  class="fas fa-pencil-alt"></i></button></td><td  class="text-right sequence-column"><span  title="Move Up"><i  class="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  class="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Test Result</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                                <tr  class=""><td >Eligibility for TB infection testing</td><td  class="texttablestyle">OPTIONSET</td><td  class="texttablestyle">No</td><td  class="texttablestyle"></td><td  class="p-1"></td><td  class="td-actions text-right"><button  type="button" title="Add Question" class="btn btn-info btn_Edit"><i  class="fas fa-plus"></i></button><button  type="button" title="Edit Question" class="btn btn-info btn_Edit"><i  class="fas fa-pencil-alt"></i></button></td><td  class="text-right sequence-column"><span  title="Move Up"><i  class="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  class="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Eligibility for TB infection testing</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
                                             </tbody>
                                         </table>
                                     </Card.Body>
@@ -486,7 +486,23 @@ const Dashboard = () => {
                                     </Accordion.Toggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="2">
-                                    <Card.Body>Hello! I'm another body</Card.Body>
+                                    <Card.Body>
+                                        <table>
+                                            <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  className="text-right">Actions</th><th  className="text-right">Sequence</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr  className=""><td >Is the test done</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Date of Testing</td><td  className="texttablestyle">DATE</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Method of Testing</td><td  className="texttablestyle">CHECKBOX</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Test Result</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Eligible for TPT</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                            </tbody>
+                                        </table>
+                                    </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
                                 <Card>
@@ -496,7 +512,19 @@ const Dashboard = () => {
                                     </Accordion.Toggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="3">
-                                    <Card.Body>Hello! I'm another body</Card.Body>
+                                    <Card.Body>
+                                        <table>
+                                            <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  className="text-right">Actions</th><th  className="text-right">Sequence</th></tr></thead>
+
+                                            <tbody>
+                                                <tr  className=""><td >Treatment Initiated</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Program ID</td><td  className="texttablestyle">NUMBER</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Date of treatment Initiation</td><td  className="texttablestyle">DATE</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                            </tbody>
+                                        </table>
+                                    </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
                                 <Card>
@@ -506,7 +534,19 @@ const Dashboard = () => {
                                     </Accordion.Toggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="4">
-                                    <Card.Body>Hello! I'm another body</Card.Body>
+                                    <Card.Body>
+                                        <table>
+                                            <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  className="text-right">Actions</th><th  className="text-right">Sequence</th></tr></thead>
+
+                                            <tbody>
+                                                <tr  className=""><td >Treatment Initiated</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Regimen</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Date of treatment Initiation</td><td  className="texttablestyle">DATE</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                            </tbody>
+                                        </table>
+                                    </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
                                 <Card>
@@ -516,7 +556,21 @@ const Dashboard = () => {
                                     </Accordion.Toggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="4">
-                                    <Card.Body>Hello! I'm another body</Card.Body>
+                                    <Card.Body>
+                                        <table>
+                                            <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  className="text-right">Actions</th><th  className="text-right">Sequence</th></tr></thead>
+
+                                            <tbody>
+                                                <tr  className=""><td >Outcome</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Reason for TPT interrupted</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Date of TPT completion</td><td  className="texttablestyle">DATE</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+
+                                                <tr  className=""><td >Remarks</td><td  className="texttablestyle">TEXT</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                            </tbody>
+                                        </table>
+                                    </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
                                </Accordion>
