@@ -142,7 +142,7 @@ body{
 .descmessage {
     font-size: 18px;
     color: #fff;
-    font-weight: 500;
+    /* font-weight: 500; */
     /* padding: 0 15px; */
     text-align: left;
 }
@@ -754,4 +754,8 @@ width: 0px; position: absolute; padding: 0px; */
 .btndownload a{
     
     color: #fff;
+}
+/* css from sarita bare */
+.navbar-brand span{
+    font-size: 1.6rem;
 }
