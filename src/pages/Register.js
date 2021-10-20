@@ -17,7 +17,9 @@ const Register = () => {
             <div>
               <Navbar className="navbg" expand="lg">
                 <Navbar.Brand href="#home">
-                <img className="endLogo" src={imgurl.endlogo.default}/>Smart Setup</Navbar.Brand>
+                <img className="endLogo" src={imgurl.endlogo.default}/>
+                <span className="ml-2">Smart-Setup</span>   
+            </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto pr-4 mr-1">
