@@ -647,20 +647,35 @@ body{
     align-items: center;
 }
 
-
+.work-flow-table{
+    text-align: left;
+}
 .work-flow-table .table thead th {
     background: #44546a;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
+    border: 1px solid #dee2e6;
 }
-
+.work-flow-table .table td {
+  
+    border: 1px solid #dee2e6;
+}
+.fillsearch{
+    display: flex;
+}
+.work-flow-table .table {
+    border: 1px solid #dee2e6;
+}
 .work-flow-top-bar {
    
     display: flex;
     justify-content: flex-end;
 }
-
+.alertscontent{
+    text-align: left;
+    margin-top: 1rem;
+}
 .addbtn{
     background-color: rgb(68, 84, 106);
      border-color: rgb(68, 84, 106);
@@ -670,3 +685,73 @@ body{
 
 /* .multiselect__input
 width: 0px; position: absolute; padding: 0px; */
+
+
+.regcard{
+    text-align: left;
+    border: 1px solid rgba(0,0,0,.125)
+}
+.regcardheader{
+    background: #44546a!important;
+    color: #fff;
+    padding: 5px 10px !important;
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0; 
+      text-align: left;
+}
+.regcardbody{
+    padding: 0 !important;
+}
+.addsign,.closesign{
+    float: right;
+}
+
+.table thead th {
+    background: #f3f2ee;
+    font-size: 14px;
+    
+    border-bottom: 2px solid #dee2e6;
+}
+
+#programserviceTBL td.sequence-column i {
+    margin: 0 5px;
+    width: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.big-checkbox {
+    width: 1.5rem;
+    height: 1.2rem;
+}
+
+#programserviceTBL .td-actions button {
+    border-radius: 4px;
+    padding: 5px;
+    line-height: 1;
+    margin: 0 3px;
+}
+
+#eligible{
+    text-align: left;
+}
+.regtabbody{
+    text-align: left;
+}
+.regtabbody .card-header-tabs{
+    background-color: #44546a;
+    color: #fff;
+}
+.regtabbody .card-header-tabs a{
+   
+    color: #fff;
+}
+.addbtn,.btndownload{
+    background-color: #44546a !important;
+    color: #fff;
+}
+
+.btndownload a{
+    
+    color: #fff;
+}

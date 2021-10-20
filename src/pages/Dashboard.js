@@ -117,8 +117,8 @@ const Dashboard = () => {
                         
 
                     <ul className="nav nav-pills mb-3 arrow-steps clearfix" id="pills-tab" role="tablist">
-                        <li className="nav-item step current" role="presentation">
-                            <a className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="a" role="tab" aria-controls="pills-home" aria-selected="true">Program</a>
+                        <li className="nav-item step " role="presentation">
+                            <a className="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="a" role="tab" aria-controls="pills-home" aria-selected="true">Program</a>
                         </li>
                         <li className="nav-item step " role="presentation">
                             <a className="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="a" role="tab" aria-controls="pills-profile" aria-selected="false">Registration</a>
@@ -126,15 +126,15 @@ const Dashboard = () => {
                         <li className="nav-item step " role="presentation">
                             <a className="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Forms</a>
                         </li>
-                        <li className="nav-item step " role="presentation">
-                            <a className="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Alerts</a>
+                        <li className="nav-item step current" role="presentation">
+                            <a className="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Alerts</a>
                         </li>
                         <li className="nav-item step " role="presentation">
                             <a className="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Workflow</a>
                         </li>
                         </ul>
                         <div className="tab-content" id="pills-tabContent">
-                        <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div className="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <div className="textbtns">
                                 <span><Button className="testbtn" >Test TBI Generic</Button></span>
                                 <span><Button className="nextbtn ml-2" >Next</Button></span> 
@@ -225,157 +225,233 @@ const Dashboard = () => {
                                     </div>
                             </div>
                             <div className="row mt-3">
-                            <div className="col-8">
-                            <Card>
-                                <Card.Header>Registration</Card.Header>
-                                <Card.Body>
-                               
-                                    <div  className="table-responsive">
-                                        <table className="table ss table-hover">
-                                          <thead >
-                                              <tr >
-                                                  <th  width="30%">Questions</th>
-                                                  <th >Type</th>
-                                                  <th >Mandatory</th>
-                                                  <th >Searchable</th>
-                                                  <th  className="text-right">Actions</th>
-                                                  <th  className="text-right">Sequence</th>
-                                             </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr  className=""><td >Client Type</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                <div className="col-8">
+                                <Card className="regcard">
+                                    <Card.Header className="regcardheader">Registration
+                                    <span  title="Add Question" className="addsign"><i  aria-hidden="true" class="fa fa-plus"></i></span>
+                                    </Card.Header>
+                                    <Card.Body className="regcardbody">
+                                
+                                        <div  className="table-responsive">
+                                            <table className="table ss table-hover" id="programserviceTBL">
+                                            <thead >
+                                                <tr >
+                                                    <th  width="30%">Questions</th>
+                                                    <th >Type</th>
+                                                    <th >Mandatory</th>
+                                                    <th >Searchable</th>
+                                                    <th  className="text-right">Actions</th>
+                                                    <th  className="text-right">Sequence</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr  className=""><td >Client Type</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr  className=""><td >Please specify</td><td  className="texttablestyle">CHECKBOX</td><td  className="texttablestyle">No</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Please specify</td><td  className="texttablestyle">CHECKBOX</td><td  className="texttablestyle">No</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr  className=""><td >Given Name</td><td  className="texttablestyle">TEXT</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"><input  type="checkbox" checked="checked" className="big-checkbox"/></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Given Name</td><td  className="texttablestyle">TEXT</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"><input  type="checkbox" checked="checked" className="big-checkbox"/></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr  className=""><td >Family Name</td><td  className="texttablestyle">TEXT</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Family Name</td><td  className="texttablestyle">TEXT</td><td  className="texttablestyle">Yes</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="td-actions text-right"><button  type="button" title="Edit Question" className="btn btn-info"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >Date of Birth</td><td className="texttablestyle">DATE</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" className="big-checkbox"/></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >Date of Birth</td><td className="texttablestyle">DATE</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" className="big-checkbox"/></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >Age</td><td className="texttablestyle">NUMBER</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" checked="checked" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >Age</td><td className="texttablestyle">NUMBER</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" checked="checked" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className="disabled"><td >Gender</td><td className="texttablestyle">OPTIONSET</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" checked="checked" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info undisabled"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className="disabled"><td >Gender</td><td className="texttablestyle">OPTIONSET</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" checked="checked" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info undisabled"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >Number of members in the household</td><td className="texttablestyle">NUMBER</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >Number of members in the household</td><td className="texttablestyle">NUMBER</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >Phone Number (Primary)</td><td className="texttablestyle">NUMBER</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button><button title="Delete Question" type="button" className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >Phone Number (Primary)</td><td className="texttablestyle">NUMBER</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button><button title="Delete Question" type="button" className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >Phone Number (secondary)</td><td className="texttablestyle">NUMBER</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >Phone Number (secondary)</td><td className="texttablestyle">NUMBER</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >Address</td><td className="texttablestyle">TEXT</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >Address</td><td className="texttablestyle">TEXT</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >Are You Currently On TB Treatment?</td><td className="texttablestyle">OPTIONSET</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >Are You Currently On TB Treatment?</td><td className="texttablestyle">OPTIONSET</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >Date of initiation of TB treatment</td><td className="texttablestyle">DATE</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button><button title="Delete Question" type="button" className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >Date of initiation of TB treatment</td><td className="texttablestyle">DATE</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button><button title="Delete Question" type="button" className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >Site of Disease</td><td className="texttablestyle">CHECKBOX</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button><button title="Delete Question" type="button" className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >Site of Disease</td><td className="texttablestyle">CHECKBOX</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button><button title="Delete Question" type="button" className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >HIV Status</td><td className="texttablestyle">OPTIONSET</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >HIV Status</td><td className="texttablestyle">OPTIONSET</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >Are you on ART?</td><td className="texttablestyle">OPTIONSET</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button><button title="Delete Question" type="button" className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >Are you on ART?</td><td className="texttablestyle">OPTIONSET</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button><button title="Delete Question" type="button" className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className=""><td >ART registration number</td><td className="texttablestyle">TEXT</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button><button title="Delete Question" type="button" className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr className=""><td >ART registration number</td><td className="texttablestyle">TEXT</td><td className="texttablestyle">Yes</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button><button title="Delete Question" type="button" className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                            <tr className="" ><td >Associate QR code</td><td className="texttablestyle">TEXT</td><td className="texttablestyle">No</td><td className="texttablestyle"><input type="checkbox" /></td><td className="td-actions text-right"><button type="button" title="Edit Question" className="btn btn-info"><i className="fas fa-pencil-alt"></i></button></td><td className="text-right sequence-column"><span title="Move Up"><i className="fas fa-long-arrow-alt-up"></i></span><span title="Move Down"><i className="fas fa-long-arrow-alt-down"></i></span></td></tr>
-
-                                          </tbody>
-                                        </table>
-                                        <div class="form-group is-empty"><label class="col-form-label"><span>Eligible for TPT(Age in Years)</span></label><div class="form-inline"><input type="number" class="form-control if w-25"/> -<input type="number" class="form-control if w-25"/></div></div>
-                                       
-                                        </div>
-                                    
-                                </Card.Body>
-                            </Card>
-                            </div>
-                                <div className="col-4">
-                                <Card>
-                                <Card.Header>Data Variables</Card.Header>
-                                    <Card.Body>
-                                    <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-                                        <Tab eventKey="home" title="English">
-                                        <Form>
-                                        <Form.Group controlId="formBasicEmail">
-                                            <Form.Label>*Name</Form.Label>
-                                            <Form.Control type="text" placeholder="" />
-                                           
-                                        </Form.Group>
-
-                                        <Form.Group controlId="formBasicPassword">
-                                            <Form.Label>*Type</Form.Label>
-                                            <Form.Control as="select">
-                                                <option>Select Type</option>
-                                                <option>Text</option>
-                                                <option>Option List</option>
-                                                <option>Number</option>
-                                                <option>Date</option>
-                                                <option>Checkbox Options</option>
-                                            </Form.Control>
-                                        </Form.Group>
-                                        
-                                        </Form>
-                                        <Form>
-                                       
-                                        {['radio'].map((type) => (
-                                            <div key={`inline-${type}`} className="mb-3">
-                                                <Form.Label className="mr-4">*Mandatory</Form.Label>
-                                            <Form.Check inline label="Yes" name="group1" type={type} id={`inline-${type}-1`} />
-                                            <Form.Check inline label="No" name="group1" type={type} id={`inline-${type}-2`} />
                                             
+
+                                            </tbody>
+                                            </table>
+                                        
+                                        
                                             </div>
-                                        ))}
-                                        </Form>
-                                        <Form>
-                                        <Form.Group controlId="exampleForm.ControlSelect1">
-                                            <Form.Label>Parent question</Form.Label>
-                                            <Form.Control as="select">
-                                            <option>-</option>
-                                            <option>Client Type </option>
-                                            <option>Please specify</option>
-                                            <option>Gender </option>
-                                            <option>Are You Currently On TB Treatment? </option>
-                                            <option>Site of Disease </option>
-                                            <option>HIV Status </option>
-                                            <option>Are you on ART?  </option>
-                                            
-                                            </Form.Control>
-                                        </Form.Group>
-                                        </Form>
-                                        <div>
-                                        <Button className="addbtn" variant="primary">Add</Button>
-                                        </div>
                                         
-                                        </Tab>
-                                        <Tab eventKey="profile" title="Arabic">
-                                            abc12
-                                        </Tab>
-                                        <Tab eventKey="contact" title="Chinese">
-                                            abc13
-                                        </Tab>
-                                        <Tab eventKey="contact1" title="Spanish">
-                                            abc13vv
-                                        </Tab>
-                                        <Tab eventKey="contact2" title="French">
-                                            abc13ff
-                                        </Tab>
-                                        <Tab eventKey="contact3" title="Russian">
-                                            abc1333
-                                        </Tab>
-                                    </Tabs>
                                     </Card.Body>
                                 </Card>
+                                <div class="form-group is-empty" id="eligible"><label class="col-form-label"><span>Eligible for TPT(Age in Years)</span></label><div class="form-inline"><input type="number" class="form-control if w-25"/> -<input type="number" class="form-control if w-25"/></div></div>
                                 </div>
+                                <div className="col-4">
+                                    <Card>
+                                    <Card.Header className="regcardheader">Data Variables
+                                    <span  className="closesign"><i  aria-hidden="true" class="fa fa-times"></i></span>
+                                    </Card.Header>
+                                        <Card.Body className="regtabbody">
+                                        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+                                            <Tab eventKey="home" title="English">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            <Form.Group controlId="formBasicPassword">
+                                                <Form.Label>*Type</Form.Label>
+                                                <Form.Control as="select">
+                                                    <option>Select Type</option>
+                                                    <option>Text</option>
+                                                    <option>Option List</option>
+                                                    <option>Number</option>
+                                                    <option>Date</option>
+                                                    <option>Checkbox Options</option>
+                                                </Form.Control>
+                                            </Form.Group>
+                                            
+                                            </Form>
+                                            <Form>
+                                        
+                                            {['radio'].map((type) => (
+                                                <div key={`inline-${type}`} className="mb-3">
+                                                    <Form.Label className="mr-4">*Mandatory</Form.Label>
+                                                <Form.Check inline label="Yes" name="group1" type={type} id={`inline-${type}-1`} />
+                                                <Form.Check inline label="No" name="group1" type={type} id={`inline-${type}-2`} />
+                                                
+                                                </div>
+                                            ))}
+                                            </Form>
+                                            <Form>
+                                            <Form.Group controlId="exampleForm.ControlSelect1">
+                                                <Form.Label>Parent question</Form.Label>
+                                                <Form.Control as="select">
+                                                <option>-</option>
+                                                <option>Client Type </option>
+                                                <option>Please specify</option>
+                                                <option>Gender </option>
+                                                <option>Are You Currently On TB Treatment? </option>
+                                                <option>Site of Disease </option>
+                                                <option>HIV Status </option>
+                                                <option>Are you on ART?  </option>
+                                                
+                                                </Form.Control>
+                                            </Form.Group>
+                                            </Form>
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            
+                                            </Tab>
+                                            <Tab eventKey="profile" title="Chinese">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            
+                                            
+                                            </Form>
+                                           
+                                            
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            </Tab>
+                                            <Tab eventKey="contact" title="Spanish">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            
+                                            
+                                            </Form>
+                                           
+                                            
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            </Tab>
+                                            <Tab eventKey="contact1" title="French">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            
+                                            
+                                            </Form>
+                                           
+                                            
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            </Tab>
+                                            <Tab eventKey="contact2" title="Russian">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            
+                                            
+                                            </Form>
+                                           
+                                            
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            </Tab>
+                                            <Tab eventKey="contact3" title="Bislama">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            
+                                            
+                                            </Form>
+                                           
+                                            
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            </Tab>
+                                        </Tabs>
+                                        </Card.Body>
+                                    </Card>
                                 </div>
-                                <div class="wizard-card-footer clearfix">
+                            </div>
+                            <div class="wizard-card-footer clearfix">
                                                 <div class="wizard-footer-left"><span role="button" tabindex="0"><button tabindex="-1" type="button" class="wizard-btnb" >
                                                 Back
                                                 </button></span> </div>
                                                 <div class="wizard-footer-right"> <span role="button" tabindex="0"><button tabindex="-1" type="button" class="wizard-btnn" >
                                                 Next
                                             </button></span></div>
-                                </div>
+                                </div>  
                             
                             </div>
+                           
 
 
                         </div>
@@ -582,7 +658,7 @@ const Dashboard = () => {
                             </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div className="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                             <div>
                             <div className="row pt-1">
                                 <div className="col-12 bnBtn">
@@ -591,7 +667,7 @@ const Dashboard = () => {
                                     </button>
                                     </div>
                             </div>
-                            <div className="row">
+                            <div className="row alertscontent">
                             
                             <div className="col-6">
                             <div className="row">
@@ -599,10 +675,10 @@ const Dashboard = () => {
                                 <div className="col-3">Threshold in days</div>
                             </div>
                             <div className="row">
-                               <div className="col-8 mt-3">
+                               <div className="col-8 mt-4">
                                <input type="text" className="form-control" placeholder="TB Infection Testing Referral Alert"/>
                                </div>
-                                <div className="col-3 mt-3">
+                                <div className="col-3 mt-4">
                                 <div   class="int-pm"><button  class="int-pm-btn int-pm-decrement disabled">-</button><div  role="spinbutton" tabindex="0" aria-valuenow="0" aria-valuemin="0" class="int-pm-value">0</div><button  class="int-pm-btn int-pm-increment">+</button></div>
                                 </div>
                             </div>
@@ -652,6 +728,13 @@ const Dashboard = () => {
                                <div  id="alertMultiselect" class="col-sm-5 ml-3">
                                    <label >Select data variables (to be shown in the Client cards in Alerts Section of the App)</label><div  tabindex="-1" class="multiselect"><div class="multiselect__select"></div>  <div class="multiselect__tags"><div class="multiselect__tags-wrap"><span class="multiselect__tag"><span>Name</span> <i aria-hidden="true" tabindex="1" class="multiselect__tag-icon"></i></span><span class="multiselect__tag"><span>Age in years</span> <i aria-hidden="true" tabindex="1" class="multiselect__tag-icon"></i></span><span class="multiselect__tag"><span>Gender</span> <i aria-hidden="true" tabindex="1" class="multiselect__tag-icon"></i></span><span class="multiselect__tag"><span>Phone Number</span> <i aria-hidden="true" tabindex="1" class="multiselect__tag-icon"></i></span><span class="multiselect__tag"><span>Presently on anti-TB medication?</span> <i aria-hidden="true" tabindex="1" class="multiselect__tag-icon"></i></span><span class="multiselect__tag"><span>Client Type</span> <i aria-hidden="true" tabindex="1" class="multiselect__tag-icon"></i></span></div>  <div class="multiselect__spinner" ></div> <input name="" id="custom-multiselect" type="text" autocomplete="nope" placeholder="Pick data variables" tabindex="0" class="multiselect__input" />  </div> <div tabindex="-1" class="multiselect__content-wrapper" ><ul class="multiselect__content" >  <li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option multiselect__option--selected"><span>Client Type</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Please specify</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option multiselect__option--highlight"><span>Given Name</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Family Name</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Date of Birth</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Age</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option multiselect__option--selected"><span>Gender</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Number of members in the household</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Phone Number (Primary)</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Phone Number (secondary)</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Address</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Are You Currently On TB Treatment?</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Date of initiation of TB treatment</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Site of Disease</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>HIV Status</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Are you on ART?</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>ART registration number</span></span> </li><li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Associate QR code</span></span> </li> <li ><span class="multiselect__option">No elements found. Consider changing the search query.</span></li> <li ><span class="multiselect__option">List is empty.</span></li> </ul></div></div></div>
                             </div>
+                            <div className="row pt-1">
+                                <div className="col-12 bnBtn">
+                                    <button tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
+                                    <button tabindex="-1" type="button" className="wizard-btnn  mr-3">Next
+                                    </button>
+                                    </div>
+                            </div>
                             </div>
                         </div>
                         <div className="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
@@ -660,8 +743,8 @@ const Dashboard = () => {
                                 <button  tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
                             <button  tabindex="-1" type="button" className="wizard-btnn  mr-4" >Publish</button></div>
                             </div>
-                            <div  className="row"><div  className=" mt-2 offset-sm-6 col-sm-6 work-flow-top-bar"><button  type="button" className="btn btn-secondary"><a  href="https://uatltbi.duredemos.com/Manual/PreventTB_TrainingManual_SmartSetup_V5.docx.pdf" target="_blank"> Download Manual</a></button></div></div>
-                            <div className="row"><div className="col-md-12"><div className="form-group form-inline pull-left "><div ><label  className="">Filter:</label><input type="text" placeholder="Search query"  autocomplete="off" /></div></div><div className="form-group form-inline pull-right VueTables__limit"></div></div></div>
+                            <div  className="row"><div  className=" mt-2 offset-sm-6 col-sm-6 work-flow-top-bar"><button  type="button" className="btndownload"><a  href="https://uatltbi.duredemos.com/Manual/PreventTB_TrainingManual_SmartSetup_V5.docx.pdf" target="_blank"> Download Manual</a></button></div></div>
+                            <div className="row"><div className="col-md-12"><div className="form-group form-inline pull-left "><div  className="fillsearch"><label  className="mr-2">Filter:</label><input type="text" placeholder="Search query"  autocomplete="off" /></div></div><div className="form-group form-inline pull-right VueTables__limit"></div></div></div>
 
                             <div className="work-flow-table">
                                 <table  className="table">
