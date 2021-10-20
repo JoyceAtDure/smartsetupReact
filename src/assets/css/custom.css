@@ -248,7 +248,7 @@ body{
 }
 .btn-info{
     background-color: #44546a !important;
-    border-radius: 10px !important;
+    border-radius: 10px ;
 }
 .btn-sign{
     background-color: #44546a !important;
@@ -416,12 +416,13 @@ body{
     border-right: 1px solid rgba(0,0,0,.125);
     position: fixed;
     left: -80px;
+    padding-top: 1rem;
 }
 
 #sidebar ul.components {
     padding: 0;
     border-bottom: 1px solid transparent;
-    height: calc(100vh - 80px) !important;
+    height: calc(100vh - 40px) !important;
     height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -434,11 +435,18 @@ body{
     padding: 7px 10px;
     text-align: center;
     font-size: .8em;
+    
 }
 #sidebar ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+#sidebar ul li a:hover, #sidebar ul li:hover{
+    
+    text-decoration: none;
 }
 #sidebar.active ul li a i {
     margin-right: 0;
@@ -661,6 +669,12 @@ body{
   
     border: 1px solid #dee2e6;
 }
+
+
+/* .formstables .table td {
+  
+    border: 1px solid #dee2e6;
+} */
 .fillsearch{
     display: flex;
 }
@@ -698,7 +712,7 @@ width: 0px; position: absolute; padding: 0px; */
     border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0; 
       text-align: left;
 }
-.regcardbody{
+.regcardbody,.formstables{
     padding: 0 !important;
 }
 .addsign,.closesign{
@@ -755,6 +769,51 @@ width: 0px; position: absolute; padding: 0px; */
     
     color: #fff;
 }
+
+.formcontent{
+    text-align: left;
+}
+.formtabletitle {
+    background-color: #44546a !important;
+    color: #fff;
+    padding: 0 !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formtableheader{
+    padding: 0 !important;
+    color: #fff !important;
+    margin-left: 1rem;
+    border: none;
+    
+}
+.formtableheader.btn-link:hover{
+   text-decoration: none;
+}
+.formstables .formsbody .td-actions{
+    display: flex;
+}
+
+.formstables .formsbody .td-actions button {
+    
+    padding: 5px;
+    line-height: 1;
+    margin: 0 3px;
+}
+
+.define-services-tools li:last-child i {
+    margin: 0 5px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 2px;
+}
+/* 
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5) ;
+    -webkit-box-shadow: 0 0 1px hsl(0deg 0% 100% / 50%);
+} */
 
 /* css from sarita bare */
 .navbar-brand span{
