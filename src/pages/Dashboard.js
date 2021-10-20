@@ -124,13 +124,13 @@ const Dashboard = () => {
                             <a className="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="a" role="tab" aria-controls="pills-profile" aria-selected="false">Registration</a>
                         </li>
                         <li className="nav-item step " role="presentation">
-                            <a className="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Forms</a>
-                        </li>
-                        <li className="nav-item step current" role="presentation">
-                            <a className="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Alerts</a>
+                            <a className="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Forms</a>
                         </li>
                         <li className="nav-item step " role="presentation">
-                            <a className="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Workflow</a>
+                            <a className="nav-link  " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Alerts</a>
+                        </li>
+                        <li className="nav-item step current" role="presentation">
+                            <a className="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Workflow</a>
                         </li>
                         </ul>
                         <div className="tab-content" id="pills-tabContent">
@@ -441,14 +441,13 @@ const Dashboard = () => {
                                     </Card>
                                 </div>
                             </div>
-                            <div class="wizard-card-footer clearfix">
-                                                <div class="wizard-footer-left"><span role="button" tabindex="0"><button tabindex="-1" type="button" class="wizard-btnb" >
-                                                Back
-                                                </button></span> </div>
-                                                <div class="wizard-footer-right"> <span role="button" tabindex="0"><button tabindex="-1" type="button" class="wizard-btnn" >
-                                                Next
-                                            </button></span></div>
-                                </div>  
+                            <div className="row pt-1">
+                                <div className="col-12 bnBtn">
+                                    <button tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
+                                    <button tabindex="-1" type="button" className="wizard-btnn  mr-3">Next
+                                    </button>
+                                    </div>
+                            </div>
                             
                             </div>
                            
@@ -472,41 +471,82 @@ const Dashboard = () => {
                             </div>
                             </div>
                            
-                            <div className="row mb-2">
+                            <div className="row mb-2 formcontent">
                                 <div className="col-8">
                                 <Accordion defaultActiveKey="0">
                                 <Card>
-                                    <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        RISK ASSESSMENT AND REFERRAL 
+                                    <Card.Header className="formtabletitle">
+                                    <Accordion.Toggle  className="formtableheader" as={Button} variant="link" eventKey="0">
+                                    <i class="fas fa-minus mr-2"></i> RISK ASSESSMENT AND REFERRAL 
+                                        
                                     </Accordion.Toggle>
+                                    <ul  class="float-right define-services-tools d-inline m-0 p-0"><li  class="d-inline"><button  type="button" data-toggle="tooltip" title="Edit Form Name" class="btn  p-1 pl-2 pr-2"><i  class="far fa-pencil-alt"></i></button></li><li  class="d-inline"><i  title="Add Question" aria-hidden="true" class="fa fa-plus mr-3"></i><i  title="Move Up" class="fas fa-long-arrow-alt-up"></i><i  title="Move Down" class="fas fa-long-arrow-alt-down"></i></li></ul>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="0">
-                                    <Card.Body>
-                                        <table>
+                                    <Card.Body className="formstables">
+                                        <table className="table">
                                             <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  className="text-right">Actions</th><th  className="text-right">Sequence</th></tr></thead>
 
-                                            <tbody>
+                                            <tbody className="formsbody">
 
-                                                <tr  className=""><td >Symptoms</td><td  className="texttablestyle">CHECKBOX</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Symptoms</td><td  className="texttablestyle">CHECKBOX</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i class="fa fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
                                                 <tr  className=""><td >please specify</td><td  className="texttablestyle">CHECKBOX</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button><button  type="button" title="Delete Question" className="btn btn-danger btn_Delete"><i  className="far fa-trash-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                                <tr  className=""><td >Is CXR report available</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="p-1"><div  tabindex="-1" className="multiselect roleDropDown"><div className="multiselect__select"></div>  <div className="multiselect__tags"><div className="multiselect__tags-wrap" ></div>  <div className="multiselect__spinner" ></div> <input name="" type="text" autocomplete="nope" placeholder="Select Role" tabindex="0" className="multiselect__input" />  <span className="multiselect__placeholder">
-                                                Select Role
-                                                </span></div> <div tabindex="-1" className="multiselect__content-wrapper" ><ul className="multiselect__content">  <li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option multiselect__option--highlight"><span>ORW</span></span> </li><li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option"><span>FACILITY TB</span></span> </li> <li ><span className="multiselect__option">No elements found. Consider changing the search query.</span></li> <li ><span className="multiselect__option">List is empty.</span></li> </ul></div></div></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                <tr  className=""><td >Is CXR report available</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="p-1"><div  tabindex="-1" className="multiselect roleDropDown"><div className="multiselect__select"></div>  
+                                                <div  className="mt-2">
+                                                
+
+                                                    <select name="multirole" id="multirole">
+                                                    <option value="Select Role">Select Role</option>
+                                                    <option value="ORW">ORW</option>
+                                                    <option value="FACILITY TB">FACILITY TB</option>
+                                                    
+                                                    </select>
+                                                </div>
+                                                {/* <div className="multiselect__tags"><div className="multiselect__tags-wrap" ></div>  <div className="multiselect__spinner" ></div> <input name="" type="text" autocomplete="nope" placeholder="Select Role" tabindex="0" className="multiselect__input" />  <span className="multiselect__placeholder">
+                                                
+                                                </span></div> <div tabindex="-1" className="multiselect__content-wrapper" ><ul className="multiselect__content">  <li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option multiselect__option--highlight"><span>ORW</span></span> </li><li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option"><span>FACILITY TB</span></span> </li> <li ><span className="multiselect__option">No elements found. Consider changing the search query.</span></li> <li ><span className="multiselect__option">List is empty.</span></li> </ul></div> */}
+                                                
+                                                </div></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
                                                 <tr  className=""><td >CXR result</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                                <tr  className=""><td >Is mWRD report available</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="p-1"><div  tabindex="-1" className="multiselect roleDropDown"><div className="multiselect__select"></div>  <div className="multiselect__tags"><div className="multiselect__tags-wrap" ></div>  <div className="multiselect__spinner" ></div> <input name="" type="text" autocomplete="nope" placeholder="Select Role" tabindex="0" className="multiselect__input" />  <span className="multiselect__placeholder">
+                                                <tr  className=""><td >Is mWRD report available</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="p-1"><div  tabindex="-1" className="multiselect roleDropDown"><div className="multiselect__select"></div> 
+                                                <div  className="mt-2">
+                                                
+
+                                                <select name="multirole" id="multirole">
+                                                <option value="Select Role">Select Role</option>
+                                                <option value="ORW">ORW</option>
+                                                <option value="FACILITY TB">FACILITY TB</option>
+                                                
+                                                </select>
+                                            </div>
+                                                 {/* <div className="multiselect__tags"><div className="multiselect__tags-wrap" ></div>  <div className="multiselect__spinner" ></div> <input name="" type="text" autocomplete="nope" placeholder="Select Role" tabindex="0" className="multiselect__input" />  <span className="multiselect__placeholder">
                                                 Select Role
-                                                </span></div> <div tabindex="-1" className="multiselect__content-wrapper" ><ul className="multiselect__content" >  <li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option multiselect__option--highlight"><span>ORW</span></span> </li><li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option"><span>FACILITY TB</span></span> </li> <li ><span className="multiselect__option">No elements found. Consider changing the search query.</span></li> <li ><span className="multiselect__option">List is empty.</span></li> </ul></div></div></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                </span></div> <div tabindex="-1" className="multiselect__content-wrapper" ><ul className="multiselect__content" >  <li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option multiselect__option--highlight"><span>ORW</span></span> </li><li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option"><span>FACILITY TB</span></span> </li> <li ><span className="multiselect__option">No elements found. Consider changing the search query.</span></li> <li ><span className="multiselect__option">List is empty.</span></li> </ul></div> */}
+                                                
+                                                </div></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
                                                 <tr  className=""><td >mWRD result</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
-                                                <tr  className=""><td >Is CRP report available</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="p-1"><div  tabindex="-1" className="multiselect roleDropDown"><div className="multiselect__select"></div>  <div className="multiselect__tags"><div className="multiselect__tags-wrap"></div>  <div className="multiselect__spinner" ></div> <input name="" type="text" autocomplete="nope" placeholder="Select Role" tabindex="0" className="multiselect__input" />  <span className="multiselect__placeholder">
+                                                <tr  className=""><td >Is CRP report available</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"><input  type="checkbox" className="big-checkbox"/></td><td  className="p-1"><div  tabindex="-1" className="multiselect roleDropDown"><div className="multiselect__select"></div>  
+                                                <div  className="mt-2">
+                                                
+
+                                                <select name="multirole" id="multirole">
+                                                <option value="Select Role">Select Role</option>
+                                                <option value="ORW">ORW</option>
+                                                <option value="FACILITY TB">FACILITY TB</option>
+                                                
+                                                </select>
+                                            </div>
+                                                {/* <div className="multiselect__tags"><div className="multiselect__tags-wrap"></div>  <div className="multiselect__spinner" ></div> <input name="" type="text" autocomplete="nope" placeholder="Select Role" tabindex="0" className="multiselect__input" />  <span className="multiselect__placeholder">
                                                 Select Role
-                                                </span></div> <div tabindex="-1" className="multiselect__content-wrapper" ><ul className="multiselect__content" >  <li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option multiselect__option--highlight"><span>ORW</span></span> </li><li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option"><span>FACILITY TB</span></span> </li> <li ><span className="multiselect__option">No elements found. Consider changing the search query.</span></li> <li ><span className="multiselect__option">List is empty.</span></li> </ul></div></div></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
+                                                </span></div> <div tabindex="-1" className="multiselect__content-wrapper" ><ul className="multiselect__content" >  <li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option multiselect__option--highlight"><span>ORW</span></span> </li><li className="multiselect__element"><span data-select="" data-selected="" data-deselect="" className="multiselect__option"><span>FACILITY TB</span></span> </li> <li ><span className="multiselect__option">No elements found. Consider changing the search query.</span></li> <li ><span className="multiselect__option">List is empty.</span></li> </ul></div> */}
+                                                
+                                                </div></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
                                                 <tr  className=""><td >CRP result</td><td  className="texttablestyle">OPTIONSET</td><td  className="texttablestyle">No</td><td  className="texttablestyle"></td><td  className="p-1"></td><td  className="td-actions text-right"><button  type="button" title="Add Question" className="btn btn-info btn_Edit"><i  className="fas fa-plus"></i></button><button  type="button" title="Edit Question" className="btn btn-info btn_Edit"><i  className="fas fa-pencil-alt"></i></button></td><td  className="text-right sequence-column"><span  title="Move Up"><i  className="fas fa-long-arrow-alt-up"></i></span><span  title="Move Down"><i  className="fas fa-long-arrow-alt-down"></i></span></td></tr>
 
@@ -524,14 +564,15 @@ const Dashboard = () => {
                                     </Accordion.Collapse>
                                 </Card>
                                 <Card>
-                                    <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                                    TB TESTING FORM 
+                                    <Card.Header className="formtabletitle">
+                                    <Accordion.Toggle className="formtableheader" as={Button} variant="link" eventKey="1">
+                                    <i class="fas fa-minus mr-2"></i>TB TESTING FORM 
                                     </Accordion.Toggle>
+                                    <ul  class="float-right define-services-tools d-inline m-0 p-0"><li  class="d-inline"><button  type="button" data-toggle="tooltip" title="Edit Form Name" class="btn  p-1 pl-2 pr-2"><i  class="far fa-pencil-alt"></i></button></li><li  class="d-inline"><i  title="Add Question" aria-hidden="true" class="fa fa-plus mr-3"></i><i  title="Move Up" class="fas fa-long-arrow-alt-up"></i><i  title="Move Down" class="fas fa-long-arrow-alt-down"></i></li></ul>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="1">
-                                    <Card.Body>
-                                        <table>
+                                    <Card.Body className="formstables">
+                                        <table className="table">
                                             <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  class="text-right">Actions</th><th  class="text-right">Sequence</th></tr></thead>
 
                                             <tbody>
@@ -556,14 +597,15 @@ const Dashboard = () => {
                                     </Accordion.Collapse>
                                 </Card>
                                 <Card>
-                                    <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                                       TB INFECTION TESTING FORM 
+                                    <Card.Header className="formtabletitle">
+                                    <Accordion.Toggle className="formtableheader" as={Button} variant="link" eventKey="2">
+                                    <i class="fas fa-minus mr-2"></i>  TB INFECTION TESTING FORM 
                                     </Accordion.Toggle>
+                                    <ul  class="float-right define-services-tools d-inline m-0 p-0"><li  class="d-inline"><button  type="button" data-toggle="tooltip" title="Edit Form Name" class="btn  p-1 pl-2 pr-2"><i  class="far fa-pencil-alt"></i></button></li><li  class="d-inline"><i  title="Add Question" aria-hidden="true" class="fa fa-plus mr-3"></i><i  title="Move Up" class="fas fa-long-arrow-alt-up"></i><i  title="Move Down" class="fas fa-long-arrow-alt-down"></i></li></ul>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="2">
-                                    <Card.Body>
-                                        <table>
+                                    <Card.Body className="formstables">
+                                        <table className="table">
                                             <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  className="text-right">Actions</th><th  className="text-right">Sequence</th></tr>
                                             </thead>
                                             <tbody>
@@ -582,14 +624,15 @@ const Dashboard = () => {
                                     </Accordion.Collapse>
                                 </Card>
                                 <Card>
-                                    <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                                    TB TREATMENT INITIATION FORM 
+                                    <Card.Header className="formtabletitle">
+                                    <Accordion.Toggle className="formtableheader" as={Button} variant="link" eventKey="3">
+                                    <i class="fas fa-minus mr-2"></i> TB TREATMENT INITIATION FORM 
                                     </Accordion.Toggle>
+                                    <ul  class="float-right define-services-tools d-inline m-0 p-0"><li  class="d-inline"><button  type="button" data-toggle="tooltip" title="Edit Form Name" class="btn  p-1 pl-2 pr-2"><i  class="far fa-pencil-alt"></i></button></li><li  class="d-inline"><i  title="Add Question" aria-hidden="true" class="fa fa-plus mr-3"></i><i  title="Move Up" class="fas fa-long-arrow-alt-up"></i><i  title="Move Down" class="fas fa-long-arrow-alt-down"></i></li></ul>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="3">
-                                    <Card.Body>
-                                        <table>
+                                    <Card.Body className="formstables">
+                                        <table className="table">
                                             <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  className="text-right">Actions</th><th  className="text-right">Sequence</th></tr></thead>
 
                                             <tbody>
@@ -604,14 +647,15 @@ const Dashboard = () => {
                                     </Accordion.Collapse>
                                 </Card>
                                 <Card>
-                                    <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                                    TB INITIATION FORM 
+                                    <Card.Header className="formtabletitle">
+                                    <Accordion.Toggle className="formtableheader" as={Button} variant="link" eventKey="4">
+                                    <i class="fas fa-minus mr-2"></i>TB INITIATION FORM 
                                     </Accordion.Toggle>
+                                    <ul  class="float-right define-services-tools d-inline m-0 p-0"><li  class="d-inline"><button  type="button" data-toggle="tooltip" title="Edit Form Name" class="btn  p-1 pl-2 pr-2"><i  class="far fa-pencil-alt"></i></button></li><li  class="d-inline"><i  title="Add Question" aria-hidden="true" class="fa fa-plus mr-3"></i><i  title="Move Up" class="fas fa-long-arrow-alt-up"></i><i  title="Move Down" class="fas fa-long-arrow-alt-down"></i></li></ul>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="4">
-                                    <Card.Body>
-                                        <table>
+                                    <Card.Body className="formstables">
+                                        <table className="table">
                                             <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  className="text-right">Actions</th><th  className="text-right">Sequence</th></tr></thead>
 
                                             <tbody>
@@ -626,14 +670,15 @@ const Dashboard = () => {
                                     </Accordion.Collapse>
                                 </Card>
                                 <Card>
-                                    <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                                    TBT Outcome
+                                    <Card.Header className="formtabletitle">
+                                    <Accordion.Toggle className="formtableheader" as={Button} variant="link" eventKey="4">
+                                    <i class="fas fa-minus mr-2"></i> TBT Outcome
                                     </Accordion.Toggle>
+                                    <ul  class="float-right define-services-tools d-inline m-0 p-0"><li  class="d-inline"><button  type="button" data-toggle="tooltip" title="Edit Form Name" class="btn  p-1 pl-2 pr-2"><i  class="far fa-pencil-alt"></i></button></li><li  class="d-inline"><i  title="Add Question" aria-hidden="true" class="fa fa-plus mr-3"></i><i  title="Move Up" class="fas fa-long-arrow-alt-up"></i><i  title="Move Down" class="fas fa-long-arrow-alt-down"></i></li></ul>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="4">
-                                    <Card.Body>
-                                        <table>
+                                    <Card.Body className="formstables">
+                                        <table className="table">
                                             <thead ><tr ><th  width="30%">Questions</th><th >Type</th><th >Mandatory</th><th >Hide</th><th  width="20%">Role</th><th  className="text-right">Actions</th><th  className="text-right">Sequence</th></tr></thead>
 
                                             <tbody>
@@ -652,13 +697,169 @@ const Dashboard = () => {
                                </Accordion>
                                 </div>
                                 <div className="col-4"> 
-                                            hidden
+                                <Card>
+                                    <Card.Header className="regcardheader">Data Variables
+                                    <span  className="closesign"><i  aria-hidden="true" class="fa fa-times"></i></span>
+                                    </Card.Header>
+                                        <Card.Body className="regtabbody">
+                                        <div  className="mb-3"><label  className=" col-form-label">*<span >Select Form</span></label><div ><select  id="stageNameList" className="form-control"><option  value="">Select Type</option><option  value="RISK ASSESSMENT AND REFERRAL"> RISK ASSESSMENT AND REFERRAL </option><option  value="TB TESTING FORM"> TB TESTING FORM </option><option  value="TB INFECTION TESTING FORM"> TB INFECTION TESTING FORM </option><option  value="TB TREATMENT INITIATION FORM"> TB TREATMENT INITIATION FORM </option><option  value="TPT INITIATION FORM"> TPT INITIATION FORM </option><option  value="TPT Outcome"> TPT Outcome </option></select><div  className="text-danger"></div></div></div>
+                                        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+                                            <Tab eventKey="home" title="English">
+                                            
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            <Form.Group controlId="formBasicPassword">
+                                                <Form.Label>*Type</Form.Label>
+                                                <Form.Control as="select">
+                                                    <option>Select Type</option>
+                                                    <option>Text</option>
+                                                    <option>Option List</option>
+                                                    <option>Number</option>
+                                                    <option>Date</option>
+                                                    <option>Checkbox Options</option>
+                                                </Form.Control>
+                                            </Form.Group>
+                                            
+                                            </Form>
+                                            <Form>
+                                        
+                                            {['radio'].map((type) => (
+                                                <div key={`inline-${type}`} className="mb-3">
+                                                    <Form.Label className="mr-4">*Mandatory</Form.Label>
+                                                <Form.Check inline label="Yes" name="group1" type={type} id={`inline-${type}-1`} />
+                                                <Form.Check inline label="No" name="group1" type={type} id={`inline-${type}-2`} />
+                                                
+                                                </div>
+                                            ))}
+                                            </Form>
+                                            <Form>
+                                            <Form.Group controlId="exampleForm.ControlSelect1">
+                                                <Form.Label>Parent question</Form.Label>
+                                                <Form.Control as="select">
+                                                <option>-</option>
+                                                <option>Client Type </option>
+                                                <option>Please specify</option>
+                                                <option>Gender </option>
+                                                <option>Are You Currently On TB Treatment? </option>
+                                                <option>Site of Disease </option>
+                                                <option>HIV Status </option>
+                                                <option>Are you on ART?  </option>
+                                                
+                                                </Form.Control>
+                                            </Form.Group>
+                                            </Form>
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            
+                                            </Tab>
+                                            <Tab eventKey="profile" title="Chinese">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            
+                                            
+                                            </Form>
+                                           
+                                            
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            </Tab>
+                                            <Tab eventKey="contact" title="Spanish">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            
+                                            
+                                            </Form>
+                                           
+                                            
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            </Tab>
+                                            <Tab eventKey="contact1" title="French">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            
+                                            
+                                            </Form>
+                                           
+                                            
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            </Tab>
+                                            <Tab eventKey="contact2" title="Russian">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            
+                                            
+                                            </Form>
+                                           
+                                            
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            </Tab>
+                                            <Tab eventKey="contact3" title="Bislama">
+                                            <Form className="mt-5">
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label>*Name</Form.Label>
+                                                <Form.Control type="text" placeholder="" />
+                                            
+                                            </Form.Group>
+
+                                            
+                                            
+                                            </Form>
+                                           
+                                            
+                                            <div>
+                                            <Button className="addbtn">Add</Button>
+                                            </div>
+                                            </Tab>
+                                        </Tabs>
+                                        </Card.Body>
+                                    </Card>
                                 </div>
                             
                             </div>
+                            <div className="row pt-1">
+                                <div className="col-12 bnBtn">
+                                    <button tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
+                                    <button tabindex="-1" type="button" className="wizard-btnn  mr-3">Next
+                                    </button>
+                                </div>
+                                
+                            </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div className="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                             <div>
                             <div className="row pt-1">
                                 <div className="col-12 bnBtn">
@@ -737,7 +938,7 @@ const Dashboard = () => {
                             </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div className="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                             <div className="row">
                             <div  className="col-12 bnBtn">
                                 <button  tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
@@ -787,7 +988,10 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer">
+            
+
+        </div>
+        <div className="footer">
                 <div className="row">
                     <div className="col-6">
                        <p className="footext">Powered by  <img className="fooimg" src={imgurl.durelogo.default}/></p>  </div>
@@ -797,8 +1001,6 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-
-        </div>
         </>
         
        
