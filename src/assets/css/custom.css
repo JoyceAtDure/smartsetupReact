@@ -245,6 +245,11 @@ body{
 
 .programHeader{
     background-color: #fff !important;
+    border-bottom: 0 !important;
+    color: #252422;
+    font-weight: 400;
+    margin: 0;
+    
 }
 .btn-info{
     background-color: #44546a !important;
@@ -271,7 +276,7 @@ body{
   }
   
   /* Responsive Arrow Progress Bar */
-  
+ 
   .arrow-steps .step {
     font-size: 14px;
     text-align: center;
@@ -424,9 +429,10 @@ body{
     border-bottom: 1px solid transparent;
     height: calc(100vh - 40px) !important;
     height: 100vh;
-    overflow-y: hidden;
+    /* overflow-y: scroll; */
     overflow-x: hidden;
     /* margin-bottom: 0 !important; */
+    padding-bottom: 0.5rem !important;
 }
 #sidebar ul li.active>a, a[aria-expanded=true] {
     color: #fff;
@@ -454,21 +460,37 @@ body{
     font-size: 1.8em;
     margin-bottom: 5px;
 }
+.hammenu{
+    border-radius: 10px !important;
+}
+.navTitle{
+    color: #44546a;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+
+}
+.name {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    float: left;
+}
 .bnBtn,.wizard-card-footer{
     display: flex;
     justify-content: space-between;
 }
 .wizard-btnb{
-    background-color: rgb(68, 84, 106);
-     border-color: rgb(68, 84, 106); 
-     color: white;
+    background-color: rgb(68, 84, 106) !important;
+     border-color: rgb(68, 84, 106) !important; 
+     color: white !important;
      
 }
 
 .wizard-btnn{
-    background-color: rgb(68, 84, 106); 
-    border-color: rgb(68, 84, 106); 
-    color: white;
+    background-color: rgb(68, 84, 106) !important; 
+    border-color: rgb(68, 84, 106) !important; 
+    color: white !important;
 }
 
 .int-pm {
@@ -638,6 +660,10 @@ body{
     display: flex;
    
     justify-content: flex-end;
+}
+.work-flow-top-bar {
+    margin-bottom: 1rem;
+   font-size: 14px;
 }
 
 .btn-secondary a{
@@ -819,3 +845,4 @@ width: 0px; position: absolute; padding: 0px; */
 .navbar-brand span{
     font-size: 1.6rem;
 }
+

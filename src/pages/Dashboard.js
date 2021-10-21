@@ -91,13 +91,14 @@ const Dashboard = () => {
             </nav>
         <div className="contentapp">
           <Navbar expand="lg">
-          <button type="button" id="sidebarCollapse" className="btn btn-info"><i data-v-c3854e32="" className="fas fa-bars"></i></button>
-            <Navbar.Brand href="#home">Prevent TB</Navbar.Brand>
+          <button type="button" id="sidebarCollapse" className="btn btn-info hammenu"><i data-v-c3854e32="" className="fas fa-bars"></i></button>
+            <Navbar.Brand className="navTitle" href="#home">Prevent TB</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                     <div >
-                        <span>Joy Joyce</span><br></br>
+                        
+                        <span className="name">Joy Joyce</span><br></br>
                         <span>joyce@mailinator.com</span>
                         </div>
                   <button className="btn btn-sign"><i  className="fas fa-sign-out-alt fa-2x pull-right"></i></button>  
@@ -124,7 +125,7 @@ const Dashboard = () => {
                             <a className="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="a" role="tab" aria-controls="pills-profile" aria-selected="false">Registration</a>
                         </li>
                         <li className="nav-item step " role="presentation">
-                            <a className="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Forms</a>
+                            <a className="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Forms</a>
                         </li>
                         <li className="nav-item step " role="presentation">
                             <a className="nav-link  " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="a" role="tab" aria-controls="pills-contact" aria-selected="false">Alerts</a>
@@ -219,8 +220,8 @@ const Dashboard = () => {
                             <div>
                             <div className="row pt-1">
                                 <div className="col-12 bnBtn">
-                                    <button tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
-                                    <button tabindex="-1" type="button" className="wizard-btnn  mr-3">Next
+                                    <button tabindex="-1" type="button" className="btn wizard-btnb  ml-3" >Back</button>
+                                    <button tabindex="-1" type="button" className="btn wizard-btnn  mr-3">Next
                                     </button>
                                     </div>
                             </div>
@@ -443,8 +444,8 @@ const Dashboard = () => {
                             </div>
                             <div className="row pt-1">
                                 <div className="col-12 bnBtn">
-                                    <button tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
-                                    <button tabindex="-1" type="button" className="wizard-btnn  mr-3">Next
+                                    <button tabindex="-1" type="button" className="btn wizard-btnb  ml-3" >Back</button>
+                                    <button tabindex="-1" type="button" className="btn wizard-btnn  mr-3">Next
                                     </button>
                                     </div>
                             </div>
@@ -851,8 +852,8 @@ const Dashboard = () => {
                             </div>
                             <div className="row pt-1">
                                 <div className="col-12 bnBtn">
-                                    <button tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
-                                    <button tabindex="-1" type="button" className="wizard-btnn  mr-3">Next
+                                    <button tabindex="-1" type="button" className="btn wizard-btnb  ml-3" >Back</button>
+                                    <button tabindex="-1" type="button" className="btn wizard-btnn  mr-3">Next
                                     </button>
                                 </div>
                                 
@@ -863,8 +864,8 @@ const Dashboard = () => {
                             <div>
                             <div className="row pt-1">
                                 <div className="col-12 bnBtn">
-                                    <button tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
-                                    <button tabindex="-1" type="button" className="wizard-btnn  mr-3">Next
+                                    <button tabindex="-1" type="button" className="btn wizard-btnb  ml-3" >Back</button>
+                                    <button tabindex="-1" type="button" className="btn wizard-btnn  mr-3">Next
                                     </button>
                                     </div>
                             </div>
@@ -931,8 +932,8 @@ const Dashboard = () => {
                             </div>
                             <div className="row pt-1">
                                 <div className="col-12 bnBtn">
-                                    <button tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
-                                    <button tabindex="-1" type="button" className="wizard-btnn  mr-3">Next
+                                    <button tabindex="-1" type="button" className="btn wizard-btnb  ml-3" >Back</button>
+                                    <button tabindex="-1" type="button" className="btn wizard-btnn  mr-3">Next
                                     </button>
                                     </div>
                             </div>
@@ -941,11 +942,11 @@ const Dashboard = () => {
                         <div className="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                             <div className="row">
                             <div  className="col-12 bnBtn">
-                                <button  tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
-                            <button  tabindex="-1" type="button" className="wizard-btnn  mr-4" >Publish</button></div>
+                                <button  tabindex="-1" type="button" className="btn wizard-btnb  ml-3" >Back</button>
+                            <button  tabindex="-1" type="button" className="btn wizard-btnn  mr-4" >Publish</button></div>
                             </div>
                             <div  className="row"><div  className=" mt-2 offset-sm-6 col-sm-6 work-flow-top-bar"><button  type="button" className="btndownload"><a  href="https://uatltbi.duredemos.com/Manual/PreventTB_TrainingManual_SmartSetup_V5.docx.pdf" target="_blank"> Download Manual</a></button></div></div>
-                            <div className="row"><div className="col-md-12"><div className="form-group form-inline pull-left "><div  className="fillsearch"><label  className="mr-2">Filter:</label><input type="text" placeholder="Search query"  autocomplete="off" /></div></div><div className="form-group form-inline pull-right VueTables__limit"></div></div></div>
+                            <div className="row"><div className="col-md-12"><div className="form-group  form-inline pull-left "><div  className="fillsearch"><label  className="mr-2">Filter:</label><input type="text" placeholder="Search query"  autocomplete="off" /></div></div><div className="form-group form-inline pull-right VueTables__limit"></div></div></div>
 
                             <div className="work-flow-table">
                                 <table  className="table">
@@ -973,8 +974,8 @@ const Dashboard = () => {
                             <div  class=" mt-2 col-sm-12 work-flow-top-bar"> *Note : The workflow section is to assign roles to users, the sequence of the variables can be changed in the Forms section </div>
                             <div className="row">
                             <div  className="col-12 bnBtn">
-                                <button  tabindex="-1" type="button" className="wizard-btnb  ml-3" >Back</button>
-                            <button  tabindex="-1" type="button" className="wizard-btnn  mr-4" >Publish</button></div>
+                                <button  tabindex="-1" type="button" className="btn wizard-btnb  ml-3" >Back</button>
+                            <button  tabindex="-1" type="button" className="btn wizard-btnn  mr-4" >Publish</button></div>
                             </div>
                             
 
