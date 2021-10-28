@@ -6,16 +6,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import Modal from 'react-bootstrap/Modal';
-import ModalDialog from 'react-bootstrap/ModalDialog';
-import ModalHeader from 'react-bootstrap/ModalHeader';
-import ModalTitle from 'react-bootstrap/ModalTitle';
-import ModalBody from 'react-bootstrap/ModalBody';
-import ModalFooter from 'react-bootstrap/ModalFooter';
 import imgurl from '../assets/images/imgUrl';
-// import Dashboard from './pages/Dashboard';
-import Register from './Register';
-import Activate from './Activate';
 
 const Home = () => {
 
@@ -47,7 +38,7 @@ const Home = () => {
 
                         <Button className="downloadbtn" variant="light" >
                             <i class="fab fa-youtube pr-2"></i>
-                          Training Video</Button>
+                            Training Video</Button>
                         <Button className="downloadbtn ml-4" variant="light"> <i class="fas fa-book pr-2"></i>Training Manual</Button>
                     </div>
 
@@ -88,10 +79,10 @@ const Home = () => {
                                     <div>
                                         <Button className="forgotbtn" type="submit">
                                             Forgot Password
-                                    </Button>
+                                        </Button>
                                     </div>
-                                    
-                                    
+
+
 
                                 </Form>
                             </Card.Body>
@@ -108,7 +99,7 @@ const Home = () => {
                         <p className="footext">Powered by  <img className="fooimg" src={imgurl.durelogo.default} /></p>  </div>
                     <div className="col-6">
                         <div class="widthMaxContent ml-auto pt-2">
-                            <p className="footextcopy">Copyright © 2020. All rights reserved</p></div>
+                         <p className="footextcopy">Copyright © 2020. All rights reserved</p></div>
                     </div>
                 </div>
             </div>
