@@ -10,6 +10,9 @@
     z-index: 999;
     top: 0;
 }
+.navbar{
+    padding: 0 !important;
+}
 .navbar-brand {
    
     margin-left: 1.4em;
@@ -24,6 +27,13 @@ body{
     font-weight: 600;
     text-decoration: none;
 }
+.avatarimg {
+    background: #44546a;
+    color: #fff;
+    padding: 5px;
+    margin-right: 15px;
+}
+
 .endLogo{
     width: auto;
     height: 80px;
@@ -260,6 +270,10 @@ body{
     color: #fff;
     margin-left: 1rem;
     border-radius: 10px !important;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 .btn-sign i{
     
@@ -388,7 +402,7 @@ body{
 .textbtns{
     text-align: right;
 }
-.testbtn,.nextbtn{
+.testbtn,.nextbtn,.publishbtn{
   background-color: #44546a !important;
 }
 .programTitle{
@@ -716,9 +730,9 @@ body{
     text-align: left;
     margin-top: 1rem;
 }
-.addbtn{
-    background-color: rgb(68, 84, 106);
-     border-color: rgb(68, 84, 106);
+.addbtn,.addbtnop{
+    background-color: rgb(68, 84, 106) !important;
+     border-color: rgb(68, 84, 106) !important;
       color: white;
       float: left;
 }
@@ -786,14 +800,18 @@ width: 0px; position: absolute; padding: 0px; */
    
     color: #fff;
 }
-.addbtn,.btndownload{
+.addbtn{
     background-color: #44546a !important;
-    color: #fff;
+    color: #fff !important;
+}
+.btndownload{
+    background-color: #5a6268!important;
+    color: #fff !important;
 }
 
 .btndownload a{
     
-    color: #fff;
+    color: #fff !important;
 }
 
 .formcontent{
@@ -834,6 +852,12 @@ width: 0px; position: absolute; padding: 0px; */
     cursor: pointer;
     padding: 8px 2px;
 }
+
+.optionlist{
+    display: flex;
+}
+
+
 /* 
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
